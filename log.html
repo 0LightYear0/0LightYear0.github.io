@@ -1,6 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0" />
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>李洋的个人主页</title>
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
@@ -87,6 +88,26 @@
 			.web2:visited{color: #00F;}
 			.web2:hover{background-image: url(http://img.taopic.com/uploads/allimg/130219/240493-130219113H067.jpg);}
 			.web2:active{color: #FF0;}
+			
+			@media all and (max-width: 800px) and (min-width: 500px)
+			{
+				.authorname{font-size:25px}
+				.otherInfo{font-size:10px}
+				.web1{border-right:13px solid black}
+				.title{font-size:20px}
+				.log{font-size:10px;padding-left:100px}
+				.personalLog{height:500px;background-size:100% 500px;}
+			}
+			
+			@media all and (max-width: 500px)
+			{
+				.authorname{font-size:15px}
+				.otherInfo{font-size:1px}
+				.web1{border-right:1px solid black}
+				.title{font-size:15px}
+				.log{font-size:10px;padding-left:55px}
+				.personalLog{height:800px;width:100%;background-size:100% 100%;}
+			}
 		</style>
 		<style> body{background-image:url(http://img2.3lian.com/2014/f4/35/d/52.jpg);} </style>
 	</head>
