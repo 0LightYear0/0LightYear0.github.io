@@ -1,0 +1,52 @@
+body{background-image: url(../image/background.jpg);color: white;background-size:cover;overflow: hidden}
+.portraitbox{position: relative;height: 100px;background-image: url(../image/loading.gif);background-size: cover;margin: 0 50px;width: 100px; border-radius: 50%}
+.portrait{height: 100px;width: 100px;transition: opacity 0.3s; border-radius: 50%}
+.loading{opacity: 0}
+.nickname{font-family: "华文新魏"; font-size: 30px; width: 100%;text-align: center;overflow: hidden}
+.content{font-family: "华文新魏"; overflow: hidden; font-size: calc(((100vh - 80px) / 4 - 60px) * 0.4); height: 100%}
+.border{width: 200px;margin-bottom: 200px;float: left;margin-right: 1em;margin-top: calc(((100vh - 80px) / 4 - 180px) / 2)}
+.message{color: white;overflow: hidden;padding: 10px;height: calc((100vh - 20px) / 4 - 80px);background-color: gray;margin: 30px;border-radius: 30px;filter:alpha(Opacity=80);-moz-opacity:0.7;opacity: 0.7}
+.adminInfo{
+	background-color: black;
+	border-radius: 30px;
+	overflow: hidden;
+	padding: 10px;
+	height: calc((100vh - 20px) / 4 - 80px);
+	margin: 30px;
+	animation-name:myfirst;
+	animation-duration:5s;
+	animation-timing-function:linear;
+	animation-delay:.5s;
+	animation-iteration-count:infinite;
+	animation-direction:alternate;
+	animation-play-state:running;
+	-webkit-animation-name:myfirst;
+	-webkit-animation-duration:5s;
+	-webkit-animation-timing-function:linear;
+	-webkit-animation-delay:.5s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-direction:alternate;
+	-webkit-animation-play-state:running;
+}
+.bulletin{position: absolute;top: 0px;margin-bottom: 0.5em;font-size: 35px; font-family: "华文彩云"}
+.item-transition{transition-property: all;transition-duration: .3s}
+.item-enter{opacity: 0}
+.item-leave{opacity: 0}
+.move{margin-top: calc((80px - 100vh) / 4 + 8px);transition: margin-top 0.5s}
+ul{padding-left:0}
+#messagebox{position: absolute;top: 100px;width: 100%}
+#adminbox{z-index: 10000;position: absolute;width: 100%;top:100px}
+@keyframes myfirst{
+	0% {background-color:red}
+	25% {background-color:yellow}
+	50% {background-color:blue}
+	75% {background-color:green}
+	100% {background-color:red}
+}
+@-webkit-keyframes myfirst{
+	0% {background-color:red}
+	25% {background-color:yellow}
+	50% {background-color:blue}
+	75% {background-color:green}
+	100% {background-color:red}
+}
