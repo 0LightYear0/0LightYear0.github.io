@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
-
-  <head>
-    <meta charset="UTF-8" />
-	<title>聊天墙</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css" />
-	<script src="https://cdn.bootcss.com/jquery/3.0.0/jquery.js"></script>
-	<script src="https://cdn.bootcss.com/socket.io/1.4.8/socket.io.js"></script>
-	<script src="https://cdn.bootcss.com/vue/1.0.6/vue.js"></script>
-  </head>
+	<head>
+		<meta charset="UTF-8" />
+		<title>聊天墙</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script src="https://cdn.bootcss.com/jquery/3.0.0/jquery.js"></script>
+		<script src="https://cdn.bootcss.com/socket.io/1.4.8/socket.io.js"></script>
+		<script src="https://cdn.bootcss.com/vue/1.0.6/vue.js"></script>
+	</head>
 
 	<body>
 		<div class="page">
@@ -22,7 +21,7 @@
 				<ul>
 					<li class="message" v-for="info in messages" transition="item">
 						<div class="border">
-							<div class="portraitbox"><img class="portrait loading" v-bind:src="info.headimgurl" onload="imageLoad(this);"/></div>
+							<div class="portraitbox"><img class="portrait" v-bind:src="info.headimgurl"/></div>
 							<div class="nickname">{{info.nickname}}</div>
 						</div>
 						<div class="content">{{info.content}}</div>
@@ -33,7 +32,7 @@
 				<ul>
 					<li class="adminInfo" v-for="info in adminInfo">
 						<div class="border">
-							<div class="portraitbox"><img class="portrait loading" v-bind:src="info.headimgurl" onload="imageLoad(this);"/></div>
+							<div class="portraitbox"><img class="portrait" v-bind:src="info.headimgurl"/></div>
 							<div class="nickname">{{info.nickname}}</div>
 						</div>
 						<div class="content">{{info.content}}</div>

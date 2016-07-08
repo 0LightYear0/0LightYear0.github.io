@@ -1,7 +1,6 @@
 body{background-image: url(./image/background.jpg);color: white;background-size:cover;overflow: hidden}
 .portraitbox{position: relative;height: 100px;background-image: url(./image/loading.gif);background-size: cover;margin: 0 50px;width: 100px; border-radius: 50%}
 .portrait{height: 100px;width: 100px;transition: opacity 0.3s; border-radius: 50%}
-.loading{opacity: 0}
 .nickname{font-family: "华文新魏"; font-size: 30px; width: 100%;text-align: center;overflow: hidden}
 .content{font-family: "华文新魏"; overflow: hidden; font-size: calc(((100vh - 80px) / 4 - 60px) * 0.4); height: 100%}
 .border{width: 200px;margin-bottom: 200px;float: left;margin-right: 1em;margin-top: calc(((100vh - 80px) / 4 - 180px) / 2)}

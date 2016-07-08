@@ -35,7 +35,6 @@ function infoContact(info){
 		setTimeout(function(){
 			infoCtrl.adminInfo.push(info);
 		}, 400);
-
 	}
 	else{
 		temp.push(info);
@@ -50,10 +49,6 @@ Vue.transition('item', {
 		$('#messagebox').removeClass('move');
   },
 });
-//头像加载
-function imageLoad(item){
-	$(item).removeClass('loading');
-}
 //设置定时器
 var timer = setInterval(function(){
 	if(temp.length > 0){
